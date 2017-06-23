@@ -19,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/P2 - Investigate a Dataset using Python/Investigating_Titanic_Data.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="31" />
+              <selected id="1" />
             </state>
           </provider>
         </entry>
@@ -247,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1498217984997</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update 3">
+      <created>1498227832383</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1498227832383</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -312,7 +319,8 @@
     <MESSAGE value="Minor Changes" />
     <MESSAGE value="Updated for Data Exploration" />
     <MESSAGE value="Update 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 2" />
+    <MESSAGE value="Update 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -619,7 +627,7 @@
     <entry file="file://$PROJECT_DIR$/P2 - Investigate a Dataset using Python/Investigating_Titanic_Data.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="31" />
+          <selected id="1" />
         </state>
       </provider>
     </entry>
