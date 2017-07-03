@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8e83dff-0944-4014-be02-9571b0044d49" name="Default" comment="">
+    <list default="true" id="b8e83dff-0944-4014-be02-9571b0044d49" name="Default" comment="Changes post review -1">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/P2 - Investigate a Dataset using Python/Investigating_Titanic_Data.ipynb" afterPath="$PROJECT_DIR$/P2 - Investigate a Dataset using Python/Investigating_Titanic_Data.ipynb" />
     </list>
@@ -19,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/P2 - Investigate a Dataset using Python/Investigating_Titanic_Data.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="34" />
+              <selected id="44" />
             </state>
           </provider>
         </entry>
@@ -238,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1499085062873</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Changes post review -1">
+      <created>1499087107411</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1499087107412</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -294,7 +301,8 @@
     <MESSAGE value="Update 2" />
     <MESSAGE value="Update 3" />
     <MESSAGE value="Changes post review" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes post review" />
+    <MESSAGE value="Changes post review -1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes post review -1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -593,7 +601,7 @@
     <entry file="file://$PROJECT_DIR$/P2 - Investigate a Dataset using Python/Investigating_Titanic_Data.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="34" />
+          <selected id="44" />
         </state>
       </provider>
     </entry>
