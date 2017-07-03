@@ -19,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/P2 - Investigate a Dataset using Python/Investigating_Titanic_Data.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="30" />
+              <selected id="44" />
             </state>
           </provider>
         </entry>
@@ -252,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1499095308833</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Changes post review -2">
+      <created>1499095449948</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1499095449948</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -609,7 +616,7 @@
     <entry file="file://$PROJECT_DIR$/P2 - Investigate a Dataset using Python/Investigating_Titanic_Data.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="30" />
+          <selected id="44" />
         </state>
       </provider>
     </entry>
