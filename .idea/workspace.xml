@@ -19,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/P3 - Data Wrangling using NoSQL/Data Wrangling using MongoDB.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="36" />
+              <selected id="38" />
             </state>
           </provider>
         </entry>
@@ -362,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1501849098820</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="P3 - Initial Commit">
+      <created>1501855995800</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1501855995800</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -717,7 +724,7 @@
     <entry file="file://$PROJECT_DIR$/P3 - Data Wrangling using NoSQL/Data Wrangling using MongoDB.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="36" />
+          <selected id="38" />
         </state>
       </provider>
     </entry>
