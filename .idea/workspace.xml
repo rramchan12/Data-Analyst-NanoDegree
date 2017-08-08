@@ -19,16 +19,26 @@
         <entry file="file://$PROJECT_DIR$/P3 - Data Wrangling using NoSQL/Data Wrangling using MongoDB.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="38" />
+              <selected id="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_collections.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharmCE2017.1/system/python_stubs/-533041486/_collections.py">
+      <file leaf-file-name="code.py" pinned="false" current-in-tab="false">
+        <entry file="mock:///code.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+            <state relative-caret-position="63">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mongo_client.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/anaconda3/envs/DAND/Lib/site-packages/pymongo/mongo_client.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="596" column="11" lean-forward="false" selection-start-line="596" selection-start-column="11" selection-end-line="596" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -37,26 +47,17 @@
       <file leaf-file-name="sample.osm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sample.osm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="28882" column="27" lean-forward="false" selection-start-line="28882" selection-start-column="16" selection-end-line="28882" selection-end-column="27" />
+            <state relative-caret-position="1151073">
+              <caret line="54813" column="24" lean-forward="false" selection-start-line="54813" selection-start-column="17" selection-end-line="54813" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bengaluru_india.osm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/P3 - Data Wrangling using NoSQL/bengaluru_india.osm/bengaluru_india.osm">
+      <file leaf-file-name="ny_extract_osm1.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P3 - Data Wrangling using NoSQL/new-york_new-york.osm/ny_extract_osm1.xml">
           <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="-215208">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dubai_abu-dhabi.osm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/P3 - Data Wrangling using NoSQL/dubai_abu-dhabi.osm/dubai_abu-dhabi.osm">
-          <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="-209152">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             </state>
           </provider>
@@ -75,6 +76,10 @@
     <findStrings>
       <find>way</find>
       <find>addr:street</find>
+      <find>created</find>
+      <find>drop</find>
+      <find>collection</find>
+      <find>truncate</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,7 +104,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="1" />
     <option name="y" value="1" />
-    <option name="width" value="1918" />
+    <option name="width" value="1911" />
     <option name="height" value="1030" />
   </component>
   <component name="ProjectView">
@@ -118,6 +123,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -158,31 +164,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dubai_abu-dhabi.osm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Data-Analyst-NanoDegree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Data-Analyst-NanoDegree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="P3 - Data Wrangling using NoSQL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bengaluru_india.osm" />
+              <option name="myItemId" value="new-york_new-york.osm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,14 +356,21 @@
       <option name="project" value="LOCAL" />
       <updated>1501855995800</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="P3 - Data Audit Commit">
+      <created>1502183508263</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1502183508263</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1918" height="1030" extended-state="0" />
+    <frame x="1" y="1" width="1911" height="1030" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18052632" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18013735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22122905" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -428,27 +422,14 @@
     <MESSAGE value="Changes post review -1" />
     <MESSAGE value="Changes post review -2" />
     <MESSAGE value="P3 - Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="P3 - Initial Commit" />
+    <MESSAGE value="P3 - Data Audit Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="P3 - Data Audit Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/P2 - Investigate a Dataset using Python/.idea/P2 - Investigate a Dataset using Python.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/anaconda3/envs/DAND/Lib/site-packages/pandas/io/parsers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="651" column="0" lean-forward="false" selection-start-line="651" selection-start-column="0" selection-end-line="651" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/P2 - Investigate a Dataset using Python/.idea/modules.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -677,13 +658,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/P3 - Data Wrangling using NoSQL/Data Wrangling Open.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="-1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/P3 - Data Wrangling using NoSQL/Data Wrangling Open.ipynb" />
     <entry file="file://$PROJECT_DIR$/P2 - Investigate a Dataset using Python/Investigating_Titanic_Data.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -691,28 +666,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/P3 - Data Wrangling using NoSQL/dubai_abu-dhabi.osm/dubai_abu-dhabi.osm">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-209152">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P3 - Data Wrangling using NoSQL/bengaluru_india.osm/bengaluru_india.osm">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-215208">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.osm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="28882" column="27" lean-forward="false" selection-start-line="28882" selection-start-column="16" selection-end-line="28882" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/P3 - Data Wrangling using NoSQL/dubai_abu-dhabi.osm/dubai_abu-dhabi.osm" />
+    <entry file="file://$PROJECT_DIR$/P3 - Data Wrangling using NoSQL/bengaluru_india.osm/bengaluru_india.osm" />
     <entry file="file://$USER_HOME$/.PyCharmCE2017.1/system/python_stubs/-533041486/_collections.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -721,10 +676,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/P3 - Data Wrangling using NoSQL/new-york_new-york.osm/ny_extract_osm1.xml">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.osm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1151073">
+          <caret line="54813" column="24" lean-forward="false" selection-start-line="54813" selection-start-column="17" selection-end-line="54813" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/anaconda3/envs/DAND/Lib/site-packages/pymongo/mongo_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="596" column="11" lean-forward="false" selection-start-line="596" selection-start-column="11" selection-end-line="596" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/P3 - Data Wrangling using NoSQL/Data Wrangling using MongoDB.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="38" />
+          <selected id="58" />
         </state>
       </provider>
     </entry>
