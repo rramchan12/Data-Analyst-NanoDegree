@@ -19,7 +19,26 @@
         <entry file="file://$PROJECT_DIR$/P3 - Data Wrangling using NoSQL/Data Wrangling using MongoDB.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="58" />
+              <selected id="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sample.osm.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample.osm.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="15779" column="170" lean-forward="false" selection-start-line="15779" selection-start-column="170" selection-end-line="15779" selection-end-column="170" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ny_extract_osm1.xml.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P3 - Data Wrangling using NoSQL/new-york_new-york.osm/ny_extract_osm1.xml.json">
+          <provider selected="true" editor-type-id="LargeFileEditor">
+            <state relative-caret-position="196">
+              <caret line="724" column="179" lean-forward="false" selection-start-line="724" selection-start-column="179" selection-end-line="724" selection-end-column="179" />
             </state>
           </provider>
         </entry>
@@ -47,7 +66,7 @@
       <file leaf-file-name="sample.osm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sample.osm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1151073">
+            <state relative-caret-position="21">
               <caret line="54813" column="24" lean-forward="false" selection-start-line="54813" selection-start-column="17" selection-end-line="54813" selection-end-column="24" />
               <folding />
             </state>
@@ -80,6 +99,12 @@
       <find>drop</find>
       <find>collection</find>
       <find>truncate</find>
+      <find>restaurant</find>
+      <find>restura</find>
+      <find>amenity</find>
+      <find>cuisine</find>
+      <find>user</find>
+      <find>_id</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -363,17 +388,24 @@
       <option name="project" value="LOCAL" />
       <updated>1502183508263</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="P3 - Mongo DB intial Commit">
+      <created>1502189087020</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1502189087020</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1911" height="1030" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18013735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18013735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22122905" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22122905" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -396,11 +428,11 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22122905" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1796875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18013735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -423,27 +455,14 @@
     <MESSAGE value="Changes post review -2" />
     <MESSAGE value="P3 - Initial Commit" />
     <MESSAGE value="P3 - Data Audit Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="P3 - Data Audit Commit" />
+    <MESSAGE value="P3 - Mongo DB intial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="P3 - Mongo DB intial Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/P2 - Investigate a Dataset using Python/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="105" lean-forward="false" selection-start-line="4" selection-start-column="105" selection-end-line="4" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/anaconda3/envs/DAND/Lib/site-packages/pandas/core/frame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="2939" column="8" lean-forward="false" selection-start-line="2939" selection-start-column="8" selection-end-line="2939" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/anaconda3/envs/DAND/Lib/site-packages/pandas/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -683,14 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample.osm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1151073">
-          <caret line="54813" column="24" lean-forward="false" selection-start-line="54813" selection-start-column="17" selection-end-line="54813" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/anaconda3/envs/DAND/Lib/site-packages/pymongo/mongo_client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -699,10 +710,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/P3 - Data Wrangling using NoSQL/new-york_new-york.osm/ny_extract_osm1.xml.json">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="196">
+          <caret line="724" column="179" lean-forward="false" selection-start-line="724" selection-start-column="179" selection-end-line="724" selection-end-column="179" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.osm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="54813" column="24" lean-forward="false" selection-start-line="54813" selection-start-column="17" selection-end-line="54813" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.osm.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="15779" column="170" lean-forward="false" selection-start-line="15779" selection-start-column="170" selection-end-line="15779" selection-end-column="170" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/P3 - Data Wrangling using NoSQL/Data Wrangling using MongoDB.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="58" />
+          <selected id="68" />
         </state>
       </provider>
     </entry>
