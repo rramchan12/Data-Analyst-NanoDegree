@@ -8,3 +8,5 @@ sample.osm.json
 
 The code is executable as a Ipython Notebook.
 The code can also be executed using python scripts. Available inthe script folder
+
+Results can be viewed in HTML format, using the exported html version
