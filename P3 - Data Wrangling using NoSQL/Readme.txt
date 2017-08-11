@@ -7,6 +7,14 @@ sample.osm
 sample.osm.json
 
 The code is executable as a Ipython Notebook.
-The code can also be executed using python scripts. Available inthe script folder
+The code can also be executed using python scripts.
 
 Results can be viewed in HTML format, using the exported html version
+
+UPDATE 11/August/2017
+Scripts added to script folder
+ - Cleansing Script - audit_pincodes.py, audit_street_names.py
+ - Shaping and Loading - load_to_Mongo_DB.py
+
+Code Review comments, Logic Corrections are addressed in the scripts.
+Data Wrangling using MongoDB.ipython - Reduced the outputs to make the code more readable.
