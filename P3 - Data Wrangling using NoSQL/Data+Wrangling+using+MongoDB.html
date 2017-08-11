@@ -11891,7 +11891,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Imports Master</span>
@@ -11919,8 +11919,8 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#File Master</span>
 
-<span class="c1">#osm_file = &quot;P3 - Data Wrangling using NoSQL/bengaluru_india.osm/bengaluru_india.osm&quot;</span>
-<span class="n">osm_file</span> <span class="o">=</span> <span class="s2">&quot;new-york_new-york.osm/ny_extract_osm1.xml&quot;</span>
+<span class="n">osm_file</span> <span class="o">=</span> <span class="s2">&quot;P3 - Data Wrangling using NoSQL/bengaluru_india.osm/bengaluru_india.osm&quot;</span>
+<span class="c1">#osm_file = &quot;new-york_new-york.osm/ny_extract_osm1.xml&quot;</span>
 <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">osm_file</span><span class="p">)</span>
 </pre></div>
 
@@ -12058,7 +12058,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Print a sample of the OSM File</span>
@@ -12069,7 +12069,7 @@ div#notebook {
 <span class="n">OSM_FILE</span> <span class="o">=</span> <span class="n">osm_file</span>  <span class="c1"># Replace this with your osm file</span>
 <span class="n">SAMPLE_FILE</span> <span class="o">=</span> <span class="s2">&quot;sample.osm&quot;</span>
 
-<span class="n">k</span> <span class="o">=</span> <span class="mi">100</span> <span class="c1"># Parameter: print the first k elements (or every kth element)</span>
+
 
 <span class="k">def</span> <span class="nf">get_element</span><span class="p">(</span><span class="n">osm_file</span><span class="p">,</span> <span class="n">tags</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;node&#39;</span><span class="p">,</span> <span class="s1">&#39;way&#39;</span><span class="p">,</span> <span class="s1">&#39;relation&#39;</span><span class="p">)):</span>
     <span class="sd">&quot;&quot;&quot;Yield element if it is the right type of tag</span>
@@ -12086,6 +12086,7 @@ div#notebook {
 
 
 <span class="c1"># print the first  k top level elements</span>
+<span class="n">k</span> <span class="o">=</span><span class="mi">10</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">element</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">get_element</span><span class="p">(</span><span class="n">OSM_FILE</span><span class="p">)):</span>
     <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">k</span><span class="p">:</span>
         <span class="k">print</span> <span class="n">ET</span><span class="o">.</span><span class="n">tostring</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
@@ -12096,6 +12097,7 @@ div#notebook {
 <span class="sd">        print ET.tostring(element)</span>
 <span class="sd">&#39;&#39;&#39;</span>
 <span class="c1"># Also writing the sample file to view it in Sublime text</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mi">100</span> <span class="c1"># Parameter: print the first k elements (or every kth element)</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">SAMPLE_FILE</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">output</span><span class="p">:</span>
     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;&lt;osm&gt;</span><span class="se">\n</span><span class="s1">  &#39;</span><span class="p">)</span>
@@ -12466,7 +12468,7 @@ div#notebook {
     
     
 
-<span class="k">def</span> <span class="nf">process_map</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">parse_map_for_user</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
     <span class="n">users</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
     <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">ET</span><span class="o">.</span><span class="n">iterparse</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">get_user</span><span class="p">(</span><span class="n">element</span><span class="p">):</span>
@@ -12474,7 +12476,7 @@ div#notebook {
 
     <span class="k">return</span> <span class="n">users</span>
 
-<span class="n">contributing_users</span> <span class="o">=</span> <span class="n">process_map</span><span class="p">(</span><span class="n">osm_file</span><span class="p">)</span>
+<span class="n">contributing_users</span> <span class="o">=</span> <span class="n">parse_map_for_user</span><span class="p">(</span><span class="n">osm_file</span><span class="p">)</span>
 <span class="nb">len</span><span class="p">(</span><span class="n">contributing_users</span><span class="p">)</span>
 </pre></div>
 
@@ -12756,7 +12758,8 @@ div#notebook {
            <span class="s1">&#39;ave&#39;</span>  <span class="p">:</span> <span class="s1">&#39;Avenue&#39;</span><span class="p">,</span>
            <span class="s1">&#39;Hwg&#39;</span>  <span class="p">:</span> <span class="s1">&#39;Highway&#39;</span><span class="p">,</span>
            <span class="s1">&#39;Hwy&#39;</span>  <span class="p">:</span> <span class="s1">&#39;Highway&#39;</span><span class="p">,</span>
-           <span class="s1">&#39;Sq&#39;</span>   <span class="p">:</span> <span class="s2">&quot;Square&quot;</span><span class="p">}</span>
+           <span class="s1">&#39;Sq&#39;</span>   <span class="p">:</span> <span class="s2">&quot;Square&quot;</span><span class="p">,</span>
+           <span class="s2">&quot;Steet&quot;</span> <span class="p">:</span> <span class="s2">&quot;Street&quot;</span><span class="p">}</span>
 </pre></div>
 
 </div>
@@ -15213,7 +15216,7 @@ MetroTech =&gt; MetroTech
 
 <span class="k">for</span> <span class="n">zip_category</span><span class="p">,</span> <span class="n">zip_codes</span> <span class="ow">in</span> <span class="n">categorized_master_list_zipcodes</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
     <span class="k">for</span> <span class="n">zip_code</span> <span class="ow">in</span> <span class="n">zip_codes</span><span class="p">:</span>
-        <span class="n">better_code</span> <span class="o">=</span> <span class="n">cleanse_invalid_zip_codes</span><span class="p">(</span><span class="n">zip_code</span><span class="p">)</span>
+        <span class="n">better_code</span> <span class="o">=</span> <span class="n">cleanse_invalid_zip_codes</span><span class="p">(</span><span class="n">zip_code</span><span class="p">)</span>        
         <span class="k">print</span> <span class="n">zip_code</span><span class="p">,</span> <span class="s2">&quot;=&gt;&quot;</span><span class="p">,</span> <span class="n">better_code</span>
 </pre></div>
 
