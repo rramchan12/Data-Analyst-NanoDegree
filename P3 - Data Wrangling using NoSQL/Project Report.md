@@ -166,10 +166,10 @@ pprint.pprint(list(cuisines))
  
  ## Conclusion ##
  
- The New York Data Set was pretty standard. In spite of having close to `2136` users, who contributed for when we sampled merely 500 MB of data. One thing that struck me was that convention was pretty standardised. Eg Street, Avenue etc. Most of the errors were just human errors. These can be weeded at source by introducing data entry Validations. One way to do that is to use a Web Form, which validates against these standard conventions. That way we have a standardised data set.
+ The New York Data Set was pretty standard. In spite of having close to `2136` unique users, were contributing for a sample of merely 500 MB of data. One thing that struck me was that iuspite of so many users the data was clean, as the location conventions were pretty standardised. Eg Street, Avenue etc. Most of the errors were just human errors. These can be weeded at source by introducing data entry Validations. One way to do that is to use a Web Form, which validates against these standard conventions. That way we have a standardised data set.
  
  ### Challenges ###
-This approach would not work if the street names itself were not standardised. This works for most western countries. However, For a lot of Asian countries, this is not true. 
+This approach would not work if the street names itself were not standardised. Standards are present for most western countries. However, For a lot of Asian countries, this is not true. 
 Addresses in  India, do not follow a specific pattern. Eg Lane, Avenue, Street might not even figure in the address set. 
 There will be some elements which are present eg Landmark, State, City and Zip Code, but there will not be standard definitions of the same. 
 We can still have a Web Form, but there needs to be a stage wise approach for standardising the elements. Lets take the case of `Landmark`
