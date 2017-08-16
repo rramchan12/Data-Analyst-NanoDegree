@@ -37,25 +37,48 @@ On running this on the original data set, I observed that the original data size
 ## Summary Statistics of the Data Set
 Below I am presenting a basic summary of the data set, along with relevant code snippets. More detailed code and explanations are refrenced in  [Data_Wrangling_using_MongoDB.ipynb](https://github.com/rramchan12/Data-Analyst-NanoDegree/blob/master/P3%20-%20Data%20Wrangling%20using%20NoSQL/Data%20Wrangling%20using%20MongoDB.ipynb)
 
-### No of Records : 2271746 ###
+#### No of Records : 2271746 ####
 ```
 len(collection.find())
 ```
 
-### No of Nodes : 1925728  ###
+#### No of Nodes : 1925728  ####
 
 ```
 collection.find({'type': 'node'}).count()
 ```
 
-### No of Ways : 346018 ###
+#### No of Ways : 346018 ####
 
 ```
 collection.find({'type': 'way'}).count()
 ```
-### No of Unique Users in this dataset : 2136 ###
+#### No of Unique Users in this dataset : 2136 ####
 
 ```
 len(collection.distinct('created.user')
 ```
+## Data Exploration ## 
+I also did some data exploration using Mongo DB pipelines, to get more insights into the data
+
+#### Top 5 contributors to this extract ####
+
+```
+group_user =  { '$group' :  { "_id" : "$created.user", "count"  : {"$sum" : 1}}}
+
+sort = { '$sort': { 'count' : -1}}
+limit_to = { '$limit' : 5}
+
+users = collection.aggregate([ group_user,sort,limit_to])
+
+pprint.pprint(list(users))
+[{u'_id': u'Rub21_nycbuildings', u'count': 939868},
+ {u'_id': u'smlevine', u'count': 219859},
+ {u'_id': u'lxbarth_nycbuildings', u'count': 170573},
+ {u'_id': u'minewman', u'count': 141949},
+ {u'_id': u'ediyes_nycbuildings', u'count': 118391}]
+ 
+ ```
+ 
+I could see that user *Rub21_nycbuildings* has a disproportianate share of contributions arount *9 Lakhs*. The average for the others was around *1.5 to 2 lakhs*. Its probable that Rub21_nycbuildings is a Buildings Afficionado
 
