@@ -34,7 +34,7 @@ C:\python_workspace\Data-Analyst-NanoDegree\P3 - Data Wrangling using NoSQL\new-
 
 ```
 
-Post that I created a sample of the first 100 elements using the script [create_sample.py](https://github.com/rramchan12/Data-Analyst-NanoDegree/blob/master/P3%20-%20Data%20Wrangling%20using%20NoSQL/script/init_analysis.py). The attached [sample.osm](https://github.com/rramchan12/Data-Analyst-NanoDegree/blob/master/P3%20-%20Data%20Wrangling%20using%20NoSQL/new-york_new-york.osm/sample.osm) gives an overview of the first hundred nodes on the data set.
+Post that I created a sample of the first 100 elements using the script [create_sample.py](https://github.com/rramchan12/Data-Analyst-NanoDegree/blob/master/P3%20-%20Data%20Wrangling%20using%20NoSQL/script/create_sample.py). The attached [sample.osm](https://github.com/rramchan12/Data-Analyst-NanoDegree/blob/master/P3%20-%20Data%20Wrangling%20using%20NoSQL/new-york_new-york.osm/sample.osm) gives an overview of the first hundred nodes on the data set.
 
 I used the subset to identify the problems that I could plan on correcting. 
 
