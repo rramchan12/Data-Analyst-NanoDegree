@@ -70,8 +70,10 @@ sort = { '$sort': { 'count' : -1}}
 limit_to = { '$limit' : 5}
 
 users = collection.aggregate([ group_user,sort,limit_to])
-
 pprint.pprint(list(users))
+```
+```
+
 [{u'_id': u'Rub21_nycbuildings', u'count': 939868},
  {u'_id': u'smlevine', u'count': 219859},
  {u'_id': u'lxbarth_nycbuildings', u'count': 170573},
@@ -91,6 +93,8 @@ limit_to = { '$limit' : 10}
 amenities = collection.aggregate([match_amenities, group_amenities, sort, limit_to])
 pprint.pprint(list(amenities))
 
+```
+```
 [{u'_id': u'bicycle_parking', u'count': 3408},
  {u'_id': u'restaurant', u'count': 1894},
  {u'_id': u'place_of_worship', u'count': 970},
@@ -101,6 +105,7 @@ pprint.pprint(list(amenities))
  {u'_id': u'bar', u'count': 390},
  {u'_id': u'bicycle_rental', u'count': 388},
  {u'_id': u'bench', u'count': 338}]
+ 
  ```
 The bicycle parkings are much more than any other amenities, which made sense, as I intentionally selected an area near the shore, for the extract. So possibly its  a bicycle friendly area. Restaurants are second in count, which also seems in line with the topography.
 
@@ -133,4 +138,10 @@ pprint.pprint(list(cuisines))
  
  ## Conclusion ##
  
+ The New York Data Set was pretty standard. In spite of having close to `2136` users, who contributed for when we sampled merely 500 MB of data. One thing that struck me was that convention was pretty standardised. Eg Street, Avenue etc. Most of the errors were just human errors. These can be weeded at source by introducing data entry Validations. One way to do that is to use a Web Form, which validates against these standard conventions. That way we have a standardised data set.
+ 
+ ### Challenges ###
+This approach would not work if the street names itself were not standardised. For a lot of countries, this is true. Addresses in  India, do not follow a specific pattern. Eg Lane, Avenue, Street might not even figure in the address set. There will be some elements which are present eg Landmark, State, City and Zip Code, but there will not be standard definitions of the same. 
+We should first try to standardise the mandatory elements, for such data sets. Lets take the case of Landmark
+Using ML Algorithsm, Based on a large number of croudsourced addresses, we can define a set of pivot points, which are landmarks. We will standardize the definitions of these Landmarks, which are  and prepopulated in the web forms, and manual entry is not allowed . Thus an accurate description of the same, in standard terms can be input in all the addresses. The same approach can then be extended to all the non standard fields, by scaling the algorithm.
  
