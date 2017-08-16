@@ -58,7 +58,7 @@ collection.find({'type': 'way'}).count()
 ```
 len(collection.distinct('created.user')
 ```
-## Data Exploration ## 
+## Additional Data Exploration ## 
 I also did some data exploration using Mongo DB pipelines, to get more insights into the data
 
 #### Top 5 contributors and their respective contributions ####
@@ -129,3 +129,7 @@ pprint.pprint(list(cuisines))
  ```
  
  This was a bit dissapointing, as the top cuisine turned out to be the uncategorized ones. This is a data error, and there is scope for correction of the data at source here. 
+ 
+ ## Conclusion ##
+ 
+ 
