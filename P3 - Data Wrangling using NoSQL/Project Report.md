@@ -9,6 +9,32 @@ New York with its combination of land and water areas, provided a good diversity
 
 <bounds minlat="40.6192000" minlon="-74.1783000" maxlat="40.7629000" maxlon="-73.9201000"/>
 
+## Initial Parsing ##
+I did an initial parsing using python to get a sense of the data, and also few identification of problem areas using the script [initial_analysis.py]()
+This gave me the list of tags in my data set, and also an analysis of the possible problem characters in the tags
+
+```
+*********************TAG CATEGORIZATION*****************
+C:\python_workspace\Data-Analyst-NanoDegree\P3 - Data Wrangling using NoSQL\new-york_new-york.osm\ny_extract_osm1.xml
+{'bounds': 1,
+ 'member': 97766,
+ 'meta': 1,
+ 'nd': 2660357,
+ 'node': 1925728,
+ 'note': 1,
+ 'osm': 1,
+ 'relation': 2887,
+ 'tag': 1893802,
+ 'way': 346018}
+*****   POSSIBLE PROBLEM CHARS **************
+{'lower': 764249,
+ 'lower_colon': 1100117,
+ 'other': 12111,
+ 'problemchars': 17325}
+
+```
+
+Post that I created a sample of the first 100 elements using the script [create_sample.py](). The attached [sample.osm](https://github.com/rramchan12/Data-Analyst-NanoDegree/blob/master/P3%20-%20Data%20Wrangling%20using%20NoSQL/new-york_new-york.osm/sample.osm) gives an overview of the first hundred nodes on the data set. I used that list to figure out a sampling of the problems that I could plan on correcting. 
 
 ## Problems Encountered in the Map
 
