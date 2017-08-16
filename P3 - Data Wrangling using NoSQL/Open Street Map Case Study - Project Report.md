@@ -61,7 +61,7 @@ len(collection.distinct('created.user')
 ## Data Exploration ## 
 I also did some data exploration using Mongo DB pipelines, to get more insights into the data
 
-#### Top 5 contributors to this extract ####
+#### Top 5 contributors and their respective contributions ####
 
 ```
 group_user =  { '$group' :  { "_id" : "$created.user", "count"  : {"$sum" : 1}}}
@@ -82,3 +82,50 @@ pprint.pprint(list(users))
  
 I could see that user *Rub21_nycbuildings* has a disproportianate share of contributions arount *9 Lakhs*. The average for the others was around *1.5 to 2 lakhs*. Its probable that Rub21_nycbuildings is a Buildings Afficionado
 
+#### Top 10 Amenities ####
+
+```
+match_amenities = { '$match' : {'amenity' : {'$exists' : True}}}
+group_amenities = {'$group' : { '_id' : '$amenity', 'count' : {'$sum' : 1}}}
+limit_to = { '$limit' : 10}
+amenities = collection.aggregate([match_amenities, group_amenities, sort, limit_to])
+pprint.pprint(list(amenities))
+
+[{u'_id': u'bicycle_parking', u'count': 3408},
+ {u'_id': u'restaurant', u'count': 1894},
+ {u'_id': u'place_of_worship', u'count': 970},
+ {u'_id': u'parking', u'count': 902},
+ {u'_id': u'cafe', u'count': 668},
+ {u'_id': u'school', u'count': 636},
+ {u'_id': u'fast_food', u'count': 467},
+ {u'_id': u'bar', u'count': 390},
+ {u'_id': u'bicycle_rental', u'count': 388},
+ {u'_id': u'bench', u'count': 338}]
+ ```
+The bicycle parkings are much more than any other amenities, which made sense, as I intentionally selected an area near the shore, for the extract. So possibly its  a bicycle friendly area. Restaurants are second in count, which also seems in line with the topography.
+
+#### Top 10 Cuisines ####
+
+```
+match_restaurant = { '$match' : {'amenity' : {'$exists' : True}, 'amenity' : 'restaurant'}}
+group_cuisine  = { '$group' : { '_id' :  {'Food' : '$cuisine'}, 'count' : {'$sum' : 1}}}
+project_food ={'$project' : {'_id' : 0, 'Food' : '$_id.Food', 'foodCount': '$count'}}
+sort = { '$sort': { 'foodCount' : -1}}
+
+cuisines = collection.aggregate([match_restaurant,group_cuisine,project_food,sort, limit_to])
+pprint.pprint(list(cuisines))
+
+[{u'Food': None, u'foodCount': 710},
+ {u'Food': u'italian', u'foodCount': 119},
+ {u'Food': u'american', u'foodCount': 92},
+ {u'Food': u'pizza', u'foodCount': 87},
+ {u'Food': u'mexican', u'foodCount': 86},
+ {u'Food': u'chinese', u'foodCount': 62},
+ {u'Food': u'japanese', u'foodCount': 56},
+ {u'Food': u'thai', u'foodCount': 46},
+ {u'Food': u'french', u'foodCount': 43},
+ {u'Food': u'indian', u'foodCount': 40}]
+ 
+ ```
+ 
+ This was a bit dissapointing, as the top cuisine turned out to be the uncategorized ones. This is a data error, and there is scope for correction of the data at source here. 
