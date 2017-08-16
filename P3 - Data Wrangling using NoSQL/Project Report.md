@@ -10,8 +10,8 @@ New York with its combination of land and water areas, provided a good diversity
 <bounds minlat="40.6192000" minlon="-74.1783000" maxlat="40.7629000" maxlon="-73.9201000"/>
 
 ## Initial Parsing ##
-I did an initial parsing using python to get a sense of the data, and also few identification of problem areas using the script [initial_analysis.py]()
-This gave me the list of tags in my data set, and also an analysis of the possible problem characters in the tags
+I did an initial parsing using python to get a sense of the data, and also few identification of problem areas using the script [initial_analysis.py](https://github.com/rramchan12/Data-Analyst-NanoDegree/blob/master/P3%20-%20Data%20Wrangling%20using%20NoSQL/script/init_analysis.py)
+This gave me the list of tags in my data set, and also an idea of the possible problem characters in the tags
 
 ```
 *********************TAG CATEGORIZATION*****************
@@ -34,7 +34,9 @@ C:\python_workspace\Data-Analyst-NanoDegree\P3 - Data Wrangling using NoSQL\new-
 
 ```
 
-Post that I created a sample of the first 100 elements using the script [create_sample.py](). The attached [sample.osm](https://github.com/rramchan12/Data-Analyst-NanoDegree/blob/master/P3%20-%20Data%20Wrangling%20using%20NoSQL/new-york_new-york.osm/sample.osm) gives an overview of the first hundred nodes on the data set. I used that list to figure out a sampling of the problems that I could plan on correcting. 
+Post that I created a sample of the first 100 elements using the script [create_sample.py](https://github.com/rramchan12/Data-Analyst-NanoDegree/blob/master/P3%20-%20Data%20Wrangling%20using%20NoSQL/script/init_analysis.py). The attached [sample.osm](https://github.com/rramchan12/Data-Analyst-NanoDegree/blob/master/P3%20-%20Data%20Wrangling%20using%20NoSQL/new-york_new-york.osm/sample.osm) gives an overview of the first hundred nodes on the data set.
+
+I used the subset to identify the problems that I could plan on correcting. 
 
 ## Problems Encountered in the Map
 
@@ -56,9 +58,9 @@ I also saw that there were inconsitent zip codes like *NY 10111*, *07030-5774*. 
 
 # Data Overview
 
-I then corrected, and converted the data to JSON documents. The attached [sample.osm](https://github.com/rramchan12/Data-Analyst-NanoDegree/blob/master/P3%20-%20Data%20Wrangling%20using%20NoSQL/new-york_new-york.osm/sample.osm) gives an overview of the first hundred nodes on the data set. Running the script for the attached sample gave me the converted [sample.osm.json](https://github.com/rramchan12/Data-Analyst-NanoDegree/blob/master/P3%20-%20Data%20Wrangling%20using%20NoSQL/new-york_new-york.osm/sample.osm.json)
+I then corrected, and converted the data to JSON documents, using [load_to_mongo_db.py](https://github.com/rramchan12/Data-Analyst-NanoDegree/blob/master/P3%20-%20Data%20Wrangling%20using%20NoSQL/script/load_to_Mongo_DB.py).Running the script for the attached sample.json gave me the converted [sample.osm.json](https://github.com/rramchan12/Data-Analyst-NanoDegree/blob/master/P3%20-%20Data%20Wrangling%20using%20NoSQL/new-york_new-york.osm/sample.osm.json)
 
-On running this on the original data set, I observed that the original data size of the data was *500 MB*. After conversion of JSON, this data had a size of *520 MB*. I then loaded all this data into MongoDB. The conversion, correction and load scripts are defined the script file [load_to_mongo_db.py](https://github.com/rramchan12/Data-Analyst-NanoDegree/blob/master/P3%20-%20Data%20Wrangling%20using%20NoSQL/script/load_to_Mongo_DB.py). 
+On running this on the original data set, I observed that the original data size of the data was *500 MB*. After conversion of JSON, this data had a size of *520 MB*. I then loaded all this data into MongoDB. The load scripts are defined the script file [load_to_mongo_db.py](https://github.com/rramchan12/Data-Analyst-NanoDegree/blob/master/P3%20-%20Data%20Wrangling%20using%20NoSQL/script/load_to_Mongo_DB.py). 
 
 ## Summary Statistics of the Data Set
 Below I am presenting a basic summary of the data set, along with relevant code snippets. More detailed code and explanations are refrenced in  [Data_Wrangling_using_MongoDB.ipynb](https://github.com/rramchan12/Data-Analyst-NanoDegree/blob/master/P3%20-%20Data%20Wrangling%20using%20NoSQL/Data%20Wrangling%20using%20MongoDB.ipynb)
