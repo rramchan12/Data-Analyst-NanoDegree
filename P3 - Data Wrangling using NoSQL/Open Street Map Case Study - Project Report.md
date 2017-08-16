@@ -114,8 +114,10 @@ sort = { '$sort': { 'foodCount' : -1}}
 
 cuisines = collection.aggregate([match_restaurant,group_cuisine,project_food,sort, limit_to])
 pprint.pprint(list(cuisines))
+```
+```
 
-[{u'Food': None, u'foodCount': 710},
+{u'Food': None, u'foodCount': 710},
  {u'Food': u'italian', u'foodCount': 119},
  {u'Food': u'american', u'foodCount': 92},
  {u'Food': u'pizza', u'foodCount': 87},
@@ -124,8 +126,7 @@ pprint.pprint(list(cuisines))
  {u'Food': u'japanese', u'foodCount': 56},
  {u'Food': u'thai', u'foodCount': 46},
  {u'Food': u'french', u'foodCount': 43},
- {u'Food': u'indian', u'foodCount': 40}]
- 
+ {u'Food': u'indian', u'foodCount': 40} 
  ```
  
  This was a bit dissapointing, as the top cuisine turned out to be the uncategorized ones. This is a data error, and there is scope for correction of the data at source here. 
