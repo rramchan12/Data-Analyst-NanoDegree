@@ -175,7 +175,17 @@ There will be some elements which are present eg Landmark, State, City and Zip C
 We can still have a Web Form, but there needs to be a stage wise approach for standardising the elements. Lets take the case of `Landmark`
 - Using ML Algorithms, based on a large number of croudsourced addresses, we can define a set of pivot points, which are landmarks. 
 - We will standardize the definitions of these Landmarks, 
-- These standard elements prepopulated in the web forms, based on the areas and manual entry is not allowed . 
+- These standard elements prepopulated in the web forms, based on the areas and manual entry is not allowed 
+- Thus an accurate description of the same, in standard terms can be input in all the addresses. The same approach can then be extended to all the non standard fields, by scaling the algorithm.. 
 
-Thus an accurate description of the same, in standard terms can be input in all the addresses. The same approach can then be extended to all the non standard fields, by scaling the algorithm.
+#### Benefits ####
+ 
+- It will become easier to input non standard fields like Landmark in Standard Notation, by using standardised Pivot Points
+- The data set will become cleaner, and can be continuously improved, by improving the definition of the Pivot Points
+- Eventually this concept can be extended to entire addresses, and towards a standardised definition of Addresses
+
+#### Anticipated Problems ####
+
+- One of key challenges is to identify the pivot points, in addresses. Egs Pivot points can be located close to each other, but might have totally different addresses. Eg - Next to Zonal Post Office, Near Zonal Post Office, Adjacent to Zonal Post Office are the same Pivot Point but with a totally different post address
+
  
