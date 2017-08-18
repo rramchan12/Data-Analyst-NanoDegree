@@ -178,6 +178,8 @@ Doing so would help clean the data at source, and remediate the need to do data 
 This approach would not work if the street names itself were not standardised. Standards are present for most western countries. However, For a lot of Asian countries, this is not true. 
 Addresses in  India, do not follow a specific pattern. Eg Lane, Avenue, Street might not even figure in the address set. 
 There will be some elements which are present eg Landmark, State, City and Zip Code, but there will not be standard definitions of the same. 
+
+#### Possible Solution for the Anticipated Problem ####
 We can still have a Web Form, but there needs to be a stage wise approach for standardising the elements. Lets take the case of `Landmark`
 - Using ML Algorithms, based on a large number of croudsourced addresses, we can define a set of pivot points, which are landmarks. 
 - We will standardize the definitions of these Landmarks, 
