@@ -166,9 +166,15 @@ pprint.pprint(list(cuisines))
  
  ## Conclusion ##
  
- The New York Data Set was pretty standard. In spite of having close to `2136` unique users, were contributing for a sample of merely 500 MB of data. One thing that struck me was that iuspite of so many users the data was clean, as the location conventions were pretty standardised. Eg Street, Avenue etc. Most of the errors were just human errors. These can be weeded at source by introducing data entry Validations. One way to do that is to use a Web Form, which validates against these standard conventions. That way we have a standardised data set.
+ The New York Data Set was pretty standard. In spite of having close to `2136` unique users, were contributing for a sample of merely 500 MB of data. 
  
- ### Challenges ###
+ ### Suggestions for Improvement ###
+ One thing that struck me was that iuspite of so many users the data was clean, as the location conventions were pretty standardised. Eg Street, Avenue etc. Most of the errors were just human errors. These can be weeded at source by introducing data entry Validations. One way to do that is to use a Web Form, which validates against these standard conventions. That way we have a standardised data set.
+
+### Benefits ###
+Doing so would help clean the data at source, and remediate the need to do data auditing just because human errors resulted in non standard data.
+ 
+ ### Anticipated Problems ###
 This approach would not work if the street names itself were not standardised. Standards are present for most western countries. However, For a lot of Asian countries, this is not true. 
 Addresses in  India, do not follow a specific pattern. Eg Lane, Avenue, Street might not even figure in the address set. 
 There will be some elements which are present eg Landmark, State, City and Zip Code, but there will not be standard definitions of the same. 
@@ -178,14 +184,6 @@ We can still have a Web Form, but there needs to be a stage wise approach for st
 - These standard elements prepopulated in the web forms, based on the areas and manual entry is not allowed 
 - Thus an accurate description of the same, in standard terms can be input in all the addresses. The same approach can then be extended to all the non standard fields, by scaling the algorithm.. 
 
-#### Benefits ####
- 
-- It will become easier to input non standard fields like Landmark in Standard Notation, by using standardised Pivot Points
-- The data set will become cleaner, and can be continuously improved, by improving the definition of the Pivot Points
-- Eventually this concept can be extended to entire addresses, and towards a standardised definition of Addresses
 
-#### Anticipated Problems ####
-
-- One of key challenges is to identify the pivot points, in addresses. Egs Pivot points can be located close to each other, but might have totally different addresses. Eg - Next to Zonal Post Office, Near Zonal Post Office, Adjacent to Zonal Post Office are the same Pivot Point but with a totally different post address
 
  
